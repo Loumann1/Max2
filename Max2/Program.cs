@@ -10,6 +10,7 @@ namespace Task_1
     {
         static void Main(string[] args)
         {
+            Console.Write("Введите строку: ");
             string line = Console.ReadLine();
             char[] charsEnglish = "abcdefghijklmnopqrstuvwxyz".ToCharArray();
             char[] chars = line.ToCharArray();
@@ -33,7 +34,7 @@ namespace Task_1
             {
                 string invalidCharsString = string.Join(", ", invalidCharsList.ToArray());
 
-                Console.WriteLine($"Invalid characters: {invalidCharsString}");
+                Console.WriteLine($"Не подходящие символы: {invalidCharsString}");
                 Console.ReadKey();
             }
 
